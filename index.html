@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ePortfolio</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5" style="margin-top: 56px;">
+        <div class="container">
+            <img src="assets/profile.jpg" alt="Profile Photo" class="rounded-circle img-fluid shadow" style="width: 180px; height: 180px; object-fit: cover; border: 5px solid #ffffff;">
+            <h1 class="display-4 mt-3">Enrico Miguel T. Velasco</h1>
+            <p class="lead">A 3rd-year Computer Science student </p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <p class="text-center">I have recent experience with programming languages used to develop desktop applications</p>
+            <div id="skills" class="text-center mt-4">
+                <h3>Skills</h3>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <span class="badge badge-primary m-2">Python</span>
+                    <span class="badge badge-secondary m-2">Java</span>
+                    <span class="badge badge-success m-2">C++</span>
+                    <span class="badge badge-info m-2">HTML/CSS</span>
+                    <span class="badge badge-warning m-2">JavaScript</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <img src="assets/CalcuLogo2.png" class="card-img-top" alt="Calculator Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Scientific Calculator</h5>
+                            <p class="card-text">A simple GUI scientific calculator built using Python.</p>
+                            <a href="https://github.com/LeDev23/Scientific-Calculator_LeDev.git" target="_blank" class="btn btn-primary btn-block">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <img src="assets/Automata.jpg" class="card-img-top" alt="Automata Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Maze Game in C++</h5>
+                            <p class="card-text">A simple Maze Game that implements a novel search algorithm</p>
+                            <a href="https://github.com/LeDev23/Maze-Game_Novel-Algo.git" target="_blank" class="btn btn-primary btn-block">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card h-100 shadow-sm">
+                        <img src="assets/Automata.jpg" class="card-img-top" alt="Bank System">
+                        <div class="card-body">
+                            <h5 class="card-title">NFA and DFA Simulator</h5>
+                            <p class="card-text">A web application that simulates finite automata</p>
+                            <a href="https://github.com/franku69/DFA-NFA-APP-backend.git" target="_blank" class="btn btn-primary btn-block">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/mwppebwr" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Enrico Miguel Velasco, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 4 JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+
+    <!-- Link to Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

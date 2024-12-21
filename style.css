@@ -1,0 +1,75 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Profile Picture Hover Effect */
+header img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1); /* Zoom in effect */
+    filter: brightness(1.2); /* Slight brightness increase */
+}
+
+/* Project Cards - No overlap */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slight scale up */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.1); /* Zoom image on hover */
+}
+
+/* Contact Form Input Focus Effects */
+#contact form input:focus, 
+#contact form textarea:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a glow effect */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Button lift effect */
+}
+
+/* Footer */
+footer {
+    background-color: #A9A9A9;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Responsive layout for Projects */
+@media (max-width: 768px) {
+    /* Make the cards take full width on small screens */
+    .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px; /* Adjust the space between cards */
+    }
+
+    .project-card img {
+        height: 150px; /* Adjust for smaller screens */
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
