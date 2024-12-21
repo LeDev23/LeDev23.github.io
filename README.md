@@ -67,9 +67,9 @@ project-root/
 │
 ├── assets/                    # Images and resources for the portfolio
 │   ├── profile.jpg            # Profile picture
-│   ├── basiccalculator.JPG    # Calculator project image
+│   ├── Calculogo2.JPG    # Calculator project image
 │   ├── Automata.jpg           # Automata project image
-│   └── bank_system.JPG        # Bank system project image
+│   └── Automata.jpg        # Bank system project image
 │
 ├── index.html                 # Main HTML file
 ├── style.css                  # Custom CSS for styling
@@ -145,6 +145,6 @@ To contribute:
 
 ## Contact
 For any questions, feedback, or suggestions, feel free to reach out:
-- **Name**: Hurley W. Banaag
-- **Email**: banaag.hurley1125@gmail.com
-- **GitHub**: [https://github.com/Gwapoko112501](https://github.com/Gwapoko112501)
+- **Name**: Enrico Miguel T. Velasco
+- **Email**: velasco.enricomiguel@gmail.com
+- **GitHub**: [https://github.com/LeDev23](https://github.com/LeDev23)
